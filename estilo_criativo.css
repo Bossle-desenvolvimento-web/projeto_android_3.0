@@ -1,0 +1,259 @@
+@charset "utf-8";
+
+
+
+
+@import url('https://fonts.googleapis.com/css2? family = Playfair + Display: wght @ 800 & display = swap');
+
+  
+       :root{   
+              --cor1:#0000EE;
+              --cor2:#4285F4;
+              --cor3:#F1F3F4;
+              --cor4:#3DDC84;
+              --cor5:#000000;
+              --cor6:#404040;
+              --cor7:#C6C6C6;
+
+              /*18/12/21*/
+         --fonte-padrao:arial,Verdana,Helvetica,sans-serif;
+          --fonte-padrao_dois:'Playfair';}
+
+          body{background-color: var(--cor7);}
+         
+
+            header{width: 1320px;
+                    height: 200px;
+                     background-color: var(--cor4);
+                      border: solid black 3px;
+                      border-bottom-left-radius:40px;
+                      border-bottom-right-radius:40px ;}
+
+                      #titulo-site{font-size: 6em;
+                                    font-family: var(--fonte-padrao_dois);
+                                        margin-top: -20px;
+                                             padding-left: 60px;
+                                             font-weight: bolder;
+                                            font-variant: small-caps;}
+
+         #p-cabecalho{font-family:var(--fonte-padrao_dois);
+                       font-size: 3em;
+                         font-weight: bolder;
+                           padding-left: 15px;
+                              margin-top:-80px ;
+                                } 
+                                
+          /*criando o  estilo menu*/
+
+
+         #menu{margin-left: 280px;
+                  margin-top: -80px;}
+
+          #menu ul{/*Nesse caso para melhor estetica visual da a cor de fundo no a */
+            list-style-type: none;
+              max-width: 700px;}
+
+  #menu ul li{display: inline;}
+
+            #menu ul li a{text-decoration: none;
+                           text-transform: uppercase;
+                          color:white;
+                           font-weight: bolder;
+                           display: inline-block;
+                           padding: 15px;
+                           border-bottom: solid black 3px;
+                           border-bottom-left-radius:10px;
+                           border-bottom-right-radius:10px ;}
+
+             #menu a{background-color:var(--cor1);}
+
+             #menu ul li a:hover{background-color:var(--cor3);
+                                  color:black;
+                                  }  
+                                  
+       #menu ul ul{display: none;
+                    left: 50px;
+                    position: absolute;} 
+                    
+       #menu ul li:hover ul{display: block;}  
+       
+      
+       #menu #um{margin-left:410px;
+                   width:80px;}
+
+       #menu ul ul li a{display: block;
+                         background-color: var(--cor3);
+                          color: #000000;
+                          } 
+
+       #menu #dois{margin-left:580px;
+                   width:80px;}
+
+
+                   /*section news*/
+
+  .news{width: 100wp;
+         height: 410px;
+           background-color:var(--cor4);}
+
+  .news_00{width: 200px;
+            height:380px;
+            background-color:white;
+              display: inline-block;      
+                margin-top:20px;
+                margin-left: 55px;}
+
+   .img_news{width:150;
+              height: 150px;
+              margin-top: 5px; 
+              margin:auto;
+              border: solid 3px grey;
+                background-color:green;
+                box-shadow: 1px 1px 3px black;
+                -webkit-transition: all 0.4s ease-in;} 
+                
+                
+   #img_news_01{background-image: url(images/news_01.jpg);
+                background-position: 50% 50%;
+                background-size: 640px 294px;}
+   
+   #img_news_02{background-image: url(images/news_02.jpg);
+                background-position: 50% 50%;
+                background-size: 640px 294px;} 
+
+   #img_news_03{background-image: url(images/news_03.jpg);
+                background-position: 50% 50%;
+                background-size: 640px 294px;} 
+
+            #img_news_04:hover{background-image: url(images/news_04.jpg);background-position: 50% 50%;
+              background-size: 640px 294px;}
+
+    #img_news_05:hover{background-image: url(images/news_05.jpg);
+                          background-position: 50% 50%;
+                          background-size: 640px 294px;}
+
+   
+  
+.img_news:hover{-webkit-transform: scale(1.5);}                    
+
+
+
+   .not_00{ padding-left: 15px;
+                    padding-top:-15px;}   
+                    
+    .leia_mais{ padding-left: 50px;
+                      margin-top: -20px;
+                       text-transform:; 
+                         font-variant: small-caps;
+                         color: var(--cor2);
+                         font-weight: bolder;
+                         }
+        
+  .leia_mais:hover{text-decoration: crimson; 
+                 -webkit-transform: scale(2.0);}                 
+                  
+    
+         
+.titulo_00{margin-left: 35px;
+             text-decoration: underline;
+            font-variant: small-caps;}
+
+
+            /*-------------------------------------------11/03/22*/
+                 
+   .mascote{width: 1300px;
+             height: 600px;
+             background-color: blueviolet;
+            margin-left: 15px;
+            margin-top: -20px;}  
+            
+    #titulo{text-align: center;
+            padding-top: 30px;
+            font: var(--fonte-padrao_dois);
+             font-variant: small-caps;
+              font-size: 2.1em;} 
+              
+    .masc{width: 620px;
+           height: 500px;
+          background-color:crimson;
+          display: inline-block;
+          } 
+          
+          #masc-01{margin-left: 30px;
+                     }
+
+          #masc-02{
+                    
+
+          }
+          
+          .masacote{font: var(--fonte-padrao_dois);
+              font-size: 2.1em;
+               font-variant: small-caps;
+             text-align: center;
+             
+             }
+/*12/03/22, section docinhos*/
+
+           .docinhos{width: 1100px;
+                     height: 600px;
+                      border: solid black 3px;
+                      margin-left: 110px;
+                      margin-top: 5px;
+                     }
+                     
+          #doc-tit{font: var(--fonte-padrao_dois);
+                    font-size: 2.1em;
+                    font-variant: small-caps;
+                    text-align: center;}
+                    
+         #doc-p{font: var(--fonte-padrao_dois);
+                margin-left: 40px;
+                font-size: 1.2em;}  
+                
+        #slider-docinhos{width: 602px;
+                          height: 302px;
+                          border: solid black 3px;
+                          margin-top: 20px;
+                          margin-left: 235px;
+                          position: relative;}  
+                          
+                          
+      #slides-docinhos{width: 600px;
+                        height: 300px;
+                        background-color:blueviolet;
+                        margin-top: 1px;
+                        margin-left: 1px;
+                        position: absolute;
+                       animation: slides 18.0s infinite;}                    
+
+
+      @keyframes slides{
+         
+              0%{background-image: url(images/img-versoes/1.5-cupcake.jpg);}
+
+              10%{background-image: url(images/img-versoes/1.6-donat.jpg);}
+
+              15%{background-image: url(images/img-versoes/2.2-floyuo.jpg);}
+
+              25%{background-image: url(images/img-versoes/2.3-gingerbread-men.jpg);}
+
+              35%{background-image: url(images/img-versoes/4.0-sanduichedesorvete.jpg);}
+
+              45%{background-image: url(images/img-versoes/4.1-jellybean.jpg);}
+
+              55%{background-image: url(images/img-versoes/4.4-kitkat.jpg);}
+
+              75%{background-image: url(images/img-versoes/5.0-lollypop.jpg);}
+
+              85%{background-image: url(images/img-versoes/6.0-marshmallow.jpg);}
+
+              90%{background-image: url(images/img-versoes/8.0-oreos.jpg);}
+
+             100%{background-image: url(images/img-versoes/9.0-pie.jpg);}
+
+              
+
+
+
+      }                 
